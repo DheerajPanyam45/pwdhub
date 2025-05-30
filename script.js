@@ -28,8 +28,8 @@ console.log("working")
 showPasswords()
 document.querySelector(".btn").addEventListener("click", (e) => {
     e.preventDefault()
-    alert("hi");
-    alert(username.value)
+    // alert("hi");
+    // alert(username.value)
     let passwords = localStorage.getItem("passwords")
     if (passwords == null) {
         let json = []
