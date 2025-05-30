@@ -18,18 +18,35 @@ body {
 
 /* NAVIGATION */
 nav {
-    color: #1e3a8a;
-    padding: 12px 3px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    padding: 20px 10px;
+    background: linear-gradient(to right, #c0dfff, #e4f1ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border-radius: 12px;
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
 }
+
+.tagline {
+    font-size: 14px;
+    font-weight: 400;
+    color: #475569;
+    margin-top: 6px;
+    text-align: center;
+    opacity: 0.85;
+    letter-spacing: 0.4px;
+}
+
 
 /* DECORATED BULLET SECTION */
 .features-box {
