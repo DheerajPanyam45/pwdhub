@@ -39,7 +39,7 @@ ul > li:hover{
 
 }
 
-table, td, tr{
+table, td, th,tr{
     border: 2px solid black;
     border-collapse: collapse;
     padding: 5px 13px;
@@ -83,6 +83,6 @@ img{
     height: 13px;
 }
 
-#alert{
+/* .alert{
     display: none;
-}
+} */
