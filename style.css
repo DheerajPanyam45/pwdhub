@@ -1,26 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Karla", sans-serif;
+  background-color: beige;
 }
 
 nav {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: rgb(255, 0, 0);
     padding: 12px 3px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.logo{
-    margin: 0 23px;
-    font-weight: 800;
-    font-size: 25px;
-    cursor: pointer;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
+
+.logo img {
+    height: 100px;  /* Increase height */
+    width: auto;    /* Maintain aspect ratio */
+    max-width: 100%; /* Responsive */
+}
+
 
 ul {
     display: flex;
