@@ -1,4 +1,4 @@
-function maskPasswrod(pass){
+function hidePassword(pass){
     let str = ""
     for(let index =0;index<pass.length;index++){
         str += "*"
@@ -38,7 +38,7 @@ const showPasswords = ()=>{
 let tb = document.querySelector("table");
 let data = localStorage.getItem("passwords")
 if (data == null || JSON.parse(data).length==0) {
-    tb.innerHTML = "no data to be shown"
+    tb.innerHTML = "🔍 No passwords found. Start by adding a new one to your secure vault!"
 }
 else {
     tb.innerHTML = ` <tr>
@@ -59,7 +59,7 @@ else {
 <td>${element.username} 
     <img src="copy.svg" alt="copy" width="100" height="100" onclick="copyText('${element.username}')">
 </td>
-<td>${maskPasswrod(element.password)} 
+<td>${hidePassword(element.password)} 
     <img src="copy.svg" alt="copy" width="100" height="100" onclick="copyText('${element.password}')">
 </td>
 <td><button class ="btnsm" onclick="deletePassword('${element.website}')"> Delete</td>
