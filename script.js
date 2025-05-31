@@ -54,13 +54,13 @@ else {
 
         str += `<tr>
 <td>${element.website} 
-    <img src="copy.svg" alt="copy" width="100" height="100" onclick="copyText('${element.website}')"> 
+    <img src="copy_button.svg" alt="copy" width="100" height="100" onclick="copyText('${element.website}')"> 
 </td>
 <td>${element.username} 
-    <img src="copy.svg" alt="copy" width="100" height="100" onclick="copyText('${element.username}')">
+    <img src="copy_button.svg" alt="copy" width="100" height="100" onclick="copyText('${element.username}')">
 </td>
 <td>${hidePassword(element.password)} 
-    <img src="copy.svg" alt="copy" width="100" height="100" onclick="copyText('${element.password}')">
+    <img src="copy_button.svg" alt="copy" width="100" height="100" onclick="copyText('${element.password}')">
 </td>
 <td><button class ="btnsm" onclick="deletePassword('${element.website}')"> Delete</td>
 </tr>`
